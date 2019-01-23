@@ -16,13 +16,12 @@
 <body>
     <header>
         <section class="container">
-            <a href="#" id="shower">
+            <a href="index.html" id="shower">
                 <h1 id="shower">TV SHOW SHOWER</h1>
             </a>
             <nav>
-                <section id="search">
-                    <input type="text" name="name" value="">
-                    <a href="index.html"><img id="glass" src="images/search.png" alt="" /></a>
+                <section id="back">
+                    <a href="index.html"><img id="arrow" src="images/arrow.png" alt="" />BACK</a>
                 </section>
             </nav>
             <div class="clearfix"></div>
@@ -30,8 +29,7 @@
     </header>
 
     <section id="main" class="container">
-            <h1>hold on one second...</h1>
-
+        <h1>page is loading...</h1>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -41,11 +39,11 @@
     <script src="js/key.js"></script>
     <script src="js/app.js"></script>
     <script>
+        let hash = window.location.hash.substring(1);
         $(document).ready(function(){
-            popularShows();
+            detailer(hash);
         });
     </script>
-
 </body>
 
 </html>

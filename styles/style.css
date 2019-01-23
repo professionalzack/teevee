@@ -4,59 +4,6 @@
   margin: 0 auto;
 }
 
-#popUp {
-  opacity: 0.95;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:  #fff;
-}
-
-#popUp .closePopUp {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 40px;
-  color: #FE052C;
-  text-decoration: none;
-}
-
-#popUp.loader {
-  background-image: url(../images/ajax_loader.gif);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#popUp.loader .container {
-  display: none;
-}
-
-#popUp .container {
-  margin-top: 80px;
-}
-
-#popUp h1 {
-  margin-bottom: 0;
-}
-
-#popUp .popUpAction {
-  padding: 10px;
-  background-color: #FE052C;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transform: 0.2s all;
-  margin-top: 30px;
-  display: inline-block;
-}
-
-#popUp .popUpAction:hover {
-  color: #FE052C;
-  background: #fff;
-}
-
 /* Header styles */
 header {
   background-color: #FE052C;
@@ -89,21 +36,21 @@ header nav {
 
 /* Search bar */
 header #search {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  right: 20px;
+  right: 30px;
   top: 10px;
 }
 
 header #search a {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 30px;
 }
 
 header #search a:hover {
-  background: #CC0020;
+  background: #FE052C;
 }
 
 header #search img {
@@ -114,18 +61,18 @@ header #search img {
 header #search input {
   position: absolute;
   right: 20px;
-  /*top: 10px;*/
-  padding: 8px 0;
-  width: 0;
-  transition: 0.2s all;
-  visibility: hidden;
+  top: 30px;    
+  padding: 8px 10px;
+  width: 300px;
+  /* transition: 0.2s all; */
+  /* visibility: hidden; */
 }
 
-header #search.active input {
-  width: 160px;
+/* header #search.active input {
+  width: 200px;
   padding: 8px 10px;
   visibility: visible;
-}
+} */
 
 header #search.active a {
   background: #CC0020;
@@ -141,20 +88,30 @@ header nav a {
   transition: 0.2s all;
 }
 
-header nav a:hover {
-  background-color: #fff;
-  color: #CC0020;
+header #back a{
+  padding-top: 30px;
+  font-size:26px;
 }
 
-nav ul {
+header #back img {
+  width: 5%;
+  /* display: block; */
+}
+
+/* header nav a:hover {
+  background-color: #fff;
+  color: #CC0020;
+} */
+
+/* nav ul {
 	padding:0;
 	margin:0;
   margin-right: 30px;
 	list-style: none;
 	position: relative;
-	}
+	} */
 
-nav ul li {
+/* nav ul li {
 	display:inline-block;
 	background-color: #CC0020;
   position: relative;
@@ -165,24 +122,24 @@ nav ul ul {
 	position: absolute;
 	top: 40px;
   right: -30px;
-}
+} */
 
-/* Display Dropdowns on Hover */
+/* Display Dropdowns on Hover
 nav ul li:hover > ul {
 	display:inherit;
-}
+} */
 
-/* First Tier Dropdown */
+/* First Tier Dropdown
 nav ul ul li {
 	width:170px;
 	float:none;
 	display:list-item;
 	position: relative;
-}
+} */
 
 /* Main Section */
 #main {
-  margin-top: 65px;
+  margin-top: 130px;
 }
 
 /* Individual Article Styling */
@@ -235,3 +192,61 @@ nav ul ul li {
   text-align: right;
   color: #097FB2;
 }
+
+/* Individual Biography Styling */
+.biography {
+    padding-top: 50px;
+    border-bottom: 2px solid black;
+    transition: 0.2s all;
+    background-color:red;
+  }
+  
+  /* .biography:hover {
+    padding: 0 2%;
+    background-color: #eee;
+  } */
+  
+  .biography .featuredImage {
+    width: 50%;
+    float: left;
+    margin: 1.5%;
+    max-width: 200px;
+  }
+  
+  .biography .featuredImage img {
+    max-width: 100%;
+    border-radius: 50px;
+  }
+  
+  /* .biography .biographyContent {
+    width: 70%;
+    float: left;
+  }
+  
+  .biography .biographyContent a {
+    text-decoration: none;
+  }
+  
+  .biography .biographyContent h3 {
+    margin-bottom: 0;
+    color: #FE052C;
+  }
+  
+  .biography .biographyContent h6 {
+    margin-top: 0;
+    color: #666;
+  } */
+  
+  .biography .bio {
+    /* width: 15%; */
+    float: right;
+    /* font-size: 30px; */
+    margin-top: 15px;
+    text-align: right;
+    /* color: #097FB2; */
+  }
+  
+  .apology {
+      margin-top: 250px;
+      float: center;
+  }
